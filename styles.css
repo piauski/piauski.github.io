@@ -1,0 +1,19 @@
+:root {
+    --grid-size: 75px;
+}
+
+@font-face {
+  font-family: 'JetbrainsMono';
+  src: url('https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.0/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+
+body {
+    background-color: #181818;
+    color: #fff;
+    font-family: 'JetbrainsMono', monospace;
+}
+
+body a {
+    color: #aaaaff;
+}

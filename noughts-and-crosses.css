@@ -1,0 +1,56 @@
+:root {
+    --grid-size: 75px;
+}
+
+@font-face {
+  font-family: 'JetbrainsMono';
+  src: url('https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.0/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+
+body {
+    background-color: #181818;
+    color: #fff;
+    font-family: 'JetbrainsMono', monospace;
+}
+
+body button {
+    font-family: 'JetbrainsMono', monospace;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    cursor:pointer;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'JetbrainsMono', monospace;
+}
+
+body button:hover {
+    background-color: #aaa;
+}
+
+.board {
+    display:grid;
+    grid-template-columns: repeat(3, var(--grid-size));
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.board button {
+    width: var(--grid-size);
+    aspect-ratio: 1;
+    padding:20px;
+    border:none;
+    border-radius:5px;
+    background-color:#fff;
+    cursor: pointer;
+
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'JetbrainsMono', monospace;
+}
+
+.board button:not([disabled]):hover{
+    background-color: #aaa !important;
+}
